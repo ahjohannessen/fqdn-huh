@@ -4,7 +4,7 @@ Odd behaviour of `typeTag[A].tpe.toString` wrt `scala.` prefix on built-in types
 
 In order to see the difference try as follows from the root of the project in your shell: 
 
-- `sbt run` yields: `Int => scala.Option[Int]`
-- `sbt stage && ./target/universal/stage/bin/fqdn` yields: `Int => Option[Int]`
+- `sbt run` yields: `scala.Option[Int]`
+- `sbt stage && ./target/universal/stage/bin/fqdn` yields: `Option[Int]`
 
 Why is the `scala.` prefix inconsistent?
